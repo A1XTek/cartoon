@@ -1,0 +1,12 @@
+# main.py
+
+from transformers import pipeline
+
+def main():
+    # Your Hugging Face code here
+    classifier = pipeline('sentiment-analysis')
+    result = classifier('I love Hugging Face!')
+    print(result)
+
+if __name__ == "__main__":
+    main()
